@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles.css";
+import NavWrapper from "./Components/NavWrapper";
+import Hamburger from "./Components/Hamburger";
+// import Input from './Components/Input';
+// import LabelledInput  from './Components/LabelledInput';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavWrapper>
+        <div className="a-H">
+          <Hamburger />
+        </div>
+      </NavWrapper>
     </div>
   );
 }

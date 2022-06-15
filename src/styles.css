@@ -1,0 +1,88 @@
+/* Align vertical */
+
+.a-V {
+    display: flex;
+    align-items: center;
+}
+
+
+/* align Horizontal */
+
+.a-H {
+    margin: 0 auto;
+}
+
+
+/* flex-column */
+
+.f-C {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* flex-row */
+
+.flex {
+    display: flex;
+}
+
+
+/*****************  COMPONENT STYLING ****************** */
+
+.navWrapper {
+    height: 148px;
+    background: #add8f768;
+}
+
+.myInput {
+    height: 40px;
+    width: 300px;
+}
+
+.myInput input {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px #3f3f3f60 solid;
+    padding-left: 5%;
+}
+
+.myInput input:focus-visible {
+    outline: 0;
+}
+
+.inputWLabel label {
+    position: absolute;
+    transform: translate(10%, 30%) scale(1);
+    transform-origin: top left;
+    transition: all 0.2s ease-out;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.inputWLabel:focus-within label {
+    transform: translate(0, -20px) scale(0.8) !important;
+    color: #4e52b4;
+}
+
+.inputWLabel .Active {
+    transform: translate(0, -20px) scale(0.8) !important;
+}
+
+
+/*************** Menu Button ***************/
+
+.menuButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 20px;
+    width: 30px;
+}
+
+.menuButton div {
+    height: 12%;
+    width: 100%;
+}
