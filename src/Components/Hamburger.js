@@ -5,7 +5,7 @@ function Hamburger({ className = "", open = (f) => f, color = "black" }) {
 
   return (
     <div
-      className={`menuButton ${className}`}
+      className={`menuButton ${className} ${clicked ? "active" : ""} `}
       onClick={() => {
         open();
         setClicked(!clicked);

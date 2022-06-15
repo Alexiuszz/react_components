@@ -78,11 +78,43 @@
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    height: 20px;
-    width: 30px;
+    height: 15px;
+    width: 22px;
 }
 
 .menuButton div {
     height: 12%;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menuButton #l1 {
     width: 100%;
+}
+
+.menuButton #l2 {
+    width: 50%;
+}
+
+.menuButton #l3 {
+    width: 30%;
+}
+
+.menuButton.active div {
+    transition: all 0.2s ease-in-out;
+}
+
+.menuButton.active #l1 {
+    transition-delay: .2s;
+    transform: translateY(8px) rotate(135deg);
+}
+
+.menuButton.active #l3 {
+    transform: translateY(-10px) rotate(-135deg);
+    width: 100%;
+    transition-delay: .2s;
+}
+
+.menuButton.active #l2 {
+    width: 0;
 }
