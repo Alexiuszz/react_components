@@ -1,120 +1,135 @@
 /* Align vertical */
 
 .a-V {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
+/* Center Content */
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Fill Parent */
+.fill {
+  height: 100%;
+  width: 100%;
+}
+
+/* Full Screen */
+.screen {
+  height: 100vh;
+  width: 100vw;
+}
 
 /* align Horizontal */
 
 .a-H {
-    margin: 0 auto;
+  margin: 0 auto;
 }
-
 
 /* flex-column */
 
 .f-C {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-
 
 /* flex-row */
 
 .flex {
-    display: flex;
+  display: flex;
 }
-
 
 /*****************  COMPONENT STYLING ****************** */
 
 .navWrapper {
-    height: 148px;
-    background: #add8f768;
+  height: 68px;
+  background: #add8f768;
 }
 
 .myInput {
-    height: 40px;
-    width: 300px;
+  height: 40px;
+  width: 300px;
 }
 
 .myInput input {
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    border: 1px #3f3f3f60 solid;
-    padding-left: 5%;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px #3f3f3f60 solid;
+  padding-left: 5%;
 }
 
 .myInput input:focus-visible {
-    outline: 0;
+  outline: 0;
 }
 
 .inputWLabel label {
-    position: absolute;
-    transform: translate(10%, 30%) scale(1);
-    transform-origin: top left;
-    transition: all 0.2s ease-out;
-    pointer-events: none;
-    z-index: 1;
+  position: absolute;
+  transform: translate(10%, 30%) scale(1);
+  transform-origin: top left;
+  transition: all 0.2s ease-out;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .inputWLabel:focus-within label {
-    transform: translate(0, -20px) scale(0.8) !important;
-    color: #4e52b4;
+  transform: translate(0, -20px) scale(0.8) !important;
+  color: #4e52b4;
 }
 
 .inputWLabel .Active {
-    transform: translate(0, -20px) scale(0.8) !important;
+  transform: translate(0, -20px) scale(0.8) !important;
 }
-
 
 /*************** Menu Button ***************/
 
 .menuButton {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-    height: 15px;
-    width: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  height: 15px;
+  width: 22px;
 }
 
 .menuButton div {
-    height: 12%;
-    font-size: 20px;
-    transition: all 0.3s ease-in-out;
+  height: 12%;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 .menuButton #l1 {
-    width: 100%;
+  width: 100%;
 }
 
 .menuButton #l2 {
-    width: 50%;
+  width: 50%;
 }
 
 .menuButton #l3 {
-    width: 30%;
+  width: 30%;
 }
 
 .menuButton.active div {
-    transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .menuButton.active #l1 {
-    transition-delay: .2s;
-    transform: translateY(8px) rotate(135deg);
+  transition-delay: 0.2s;
+  transform: translateY(8px) rotate(135deg);
 }
 
 .menuButton.active #l3 {
-    transform: translateY(-10px) rotate(-135deg);
-    width: 100%;
-    transition-delay: .2s;
+  transform: translateY(-10px) rotate(-135deg);
+  width: 100%;
+  transition-delay: 0.2s;
 }
 
 .menuButton.active #l2 {
-    width: 0;
+  width: 0;
 }
