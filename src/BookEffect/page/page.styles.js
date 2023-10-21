@@ -88,6 +88,66 @@ export const PageContainer = styled(PageParent)`
           left: -40px;
         }
       }
+
+      &.next {
+        left: auto;
+        right: 30px;
+
+        &:hover {
+          right: 34px;
+
+          &:before {
+            width: 40px;
+            right: -40px;
+          }
+        }
+        &:before {
+          left: auto;
+          right: -33px;
+        }
+
+        &:after {
+          transform: rotate(180deg);
+          top: 5px;
+          left: 11px;
+          pointer-events: none;
+        }
+      }
+      &:after {
+        content: "▢";
+        display: block;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: #abd71b;
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.2s;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 32px;
+        height: 1px;
+        background: #abd71b;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -32px;
+        transition: all 0.2s;
+      }
+    }
+
+    .page-content {
+      transform-style: preserve-3d;
+      position: absolute;
+      z-index: 1;
+      pointer-events: none;
+      top: 0;
+      transform: translateZ(0px);
+      width: 100%;
+      height: 100%;
     }
     .page-number {
       position: absolute;
