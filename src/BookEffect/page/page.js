@@ -10,10 +10,16 @@ function Page({ pageNum, content, pages }) {
             {"" + pageNum + " " + (pageNum + 1)}
           </div>
         )}
+        {pageNum !== 1 && pageNum % 2 !== 0 && (
+          <div class="control"></div>
+        )}
         <div className="page-content">
           <h1>{content.title}</h1>
           <p>{content.text}</p>
         </div>
+        {pageNum !== pages && pageNum % 2 === 0 && (
+          <div class="control next"></div>
+        )}
       </div>
     </PageContainer>
   );
