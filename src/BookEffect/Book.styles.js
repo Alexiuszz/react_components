@@ -9,8 +9,17 @@ export const BookContainer = styled.div`
   top: 0;
   left: 0;
   .book {
-    width: 85%;
-    height: 70%;
-    box-shadow: 0 41px 38px -20px #3a3a3a;
+    width: calc(100% - 110px);
+    height: calc(100% - 210px);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    perspective: 1800px;
+    box-shadow: 0 41px 38px -20px #0a3150;
+    max-width: 1300px;
+    max-height: 650px;
   }
 `;
