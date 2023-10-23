@@ -22,14 +22,20 @@ const pageContent = [
 ];
 function Book() {
   return (
-    <BookContainer pages={pageContent.length + 1}>
+    <BookContainer $pages={pageContent.length}>
       <div className="book">
+        {pageContent.map(({ title }, i) => {
+          if (i <= (pageContent.length - 1) / 2)
+            return (
+              <input id={`${i + 1}`} name="trigger" type="radio" key={i}/>
+            );
+        })}
         {pageContent.map((content, i) => (
           <Page
             key={i}
             pageNum={i + 1}
             content={content}
-            pages={pageContent.length + 1}
+            pages={pageContent.length}
           />
         ))}
       </div>

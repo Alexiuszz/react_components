@@ -11,8 +11,8 @@ export const PageContainer = styled(PageParent)`
   pointer-events: none;
   float: right;
   transform-style: preserve-3d;
-  &:nth-of-type(${(props) => props.pagenum}) {
-    z-index: ${(props) => props.pages - props.pagenum};
+  &:nth-of-type(${(props) => props.$pagenum}) {
+    z-index: ${(props) => props.$pages - props.$pagenum};
     transition: transform 1s 0.2s, z-index 0s 0.5s;
   }
 
@@ -61,8 +61,6 @@ export const PageContainer = styled(PageParent)`
   }
 
   .page-inner {
-    background: url("https://www.colorfusionstudio.com/wp-content/uploads/2015/07/cfs-models-003-683x1024.jpg");
-    background-size: 1400px !important;
     height: 100%;
     transform-style: preserve-3d;
 
@@ -112,6 +110,13 @@ export const PageContainer = styled(PageParent)`
           left: 11px;
           pointer-events: none;
         }
+      }
+      label {
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        cursor: pointer;
       }
       &:after {
         content: "▢";
