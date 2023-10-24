@@ -15,7 +15,9 @@ export const PageContainer = styled(PageParent)`
     z-index: ${(props) => props.$pages - props.$pagenum};
     transition: transform 1s 0.2s, z-index 0s 0.5s;
   }
-
+  & .page-inner {
+    background-color: ${(props) => `#e${props.$pagenum}d46d`};
+  }
   &:nth-of-type(1) {
     left: 0;
     z-index: 0;

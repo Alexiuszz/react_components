@@ -2,7 +2,6 @@ import React from "react";
 import { PageContainer } from "./page.styles";
 
 function Page({ pageNum, content, pages }) {
-        console.log('pages', pages, 'pageNUm', pageNum)
   return (
     <PageContainer $pages={pages} $pagenum={pageNum}>
       <div className="page-inner">
@@ -13,7 +12,7 @@ function Page({ pageNum, content, pages }) {
         )}
         {pageNum !== 1 && pageNum % 2 !== 0 && (
           <div className="control">
-            <label htmlFor={`${pageNum - 2}`}></label>
+            <label htmlFor={`${(pageNum - 1) / 2}`}></label>
           </div>
         )}
         <div className="page-content">
@@ -22,7 +21,7 @@ function Page({ pageNum, content, pages }) {
         </div>
         {pageNum !== pages && pageNum % 2 === 0 && (
           <div className="control next">
-            <label htmlFor={`${pageNum}`}></label>
+            <label htmlFor={`${pageNum / 2 + 1}`}></label>
           </div>
         )}
       </div>
