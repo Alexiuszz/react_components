@@ -23,14 +23,6 @@ const pageContent = [
     title: "Page 5",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa delectus necessitatibus sed non distinctio accusamus, iste facilis dolores reiciendis quia, ut sit qui commodi excepturi. Magnam doloribus voluptatibus quia dicta?",
   },
-  {
-    title: "Page 6",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa delectus necessitatibus sed non distinctio accusamus, iste facilis dolores reiciendis quia, ut sit qui commodi excepturi. Magnam doloribus voluptatibus quia dicta?",
-  },
-  {
-    title: "Page 7",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa delectus necessitatibus sed non distinctio accusamus, iste facilis dolores reiciendis quia, ut sit qui commodi excepturi. Magnam doloribus voluptatibus quia dicta?",
-  },
 ];
 function Book() {
   return (

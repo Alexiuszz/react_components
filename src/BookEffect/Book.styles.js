@@ -21,20 +21,23 @@ export const BookContainer = styled.div`
     box-shadow: 0 41px 38px -20px #0a3150;
     max-width: 1300px;
     max-height: 650px;
+    input {
+      display: none;
+    }
 
     ${({ $pages }) => {
       let $inputs = "+ input + input";
       let $p = 0;
       let $styles = "";
-      for (let i = 1; Math.ceil($pages / 2) - 2; i++) {
-        $inputs += "+ input";
+      for (let i = 1; i <= Math.ceil($pages / 2) - 2; i++) {
+        $inputs += " + input";
       }
       for (let i = 1; i <= Math.ceil($pages / 2); i++) {
         let $lpage = "";
         let $rpage = "";
 
         if (i === $pages / 2) $inputs = $inputs.slice(0, -8);
-        else $inputs = $inputs.slice(0, -7);
+        else $inputs = $inputs.slice(0, -8);
 
         console.log("input string->", $inputs);
         for (let j = 1; j <= $p; j++) {
